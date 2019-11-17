@@ -1,0 +1,19 @@
+
+int valeur_lue=0; 
+void setup() {
+  pinMode(3,INPUT);
+  pinMode(2,OUTPUT); 
+
+}
+
+void loop() {
+//On lit la valeur du bouton ; si valeur_lue !=0 alors bouton est appuyé 
+  valeur_lue=digitalRead(3); 
+  if(valeur_lue !=0){
+    // le bouton est appuyé donc on allume la LED:
+    digitalWrite(2,HIGH);
+  }
+  else{
+      digitalWrite(2,LOW);
+  }
+}
