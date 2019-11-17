@@ -1,0 +1,14 @@
+void setup() {
+pinMode(5,OUTPUT); 
+// son de 50 hz pour 2 secondes puis 500hz pour 1 seconde.
+tone(5,50,2000);
+delay(500);
+tone(5,500,1000);
+delay(200); 
+
+}
+
+void loop() {
+
+
+}
