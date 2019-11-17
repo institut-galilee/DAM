@@ -1,0 +1,51 @@
+int pin_rouge=11;
+int pin_vert=10;
+int pin_bleu=9;
+
+void setup() {
+pinMode(pin_rouge,OUTPUT); 
+pinMode(pin_vert,OUTPUT); 
+pinMode(pin_bleu,OUTPUT); 
+}
+
+void loop() {
+//On met la LED en couleur rouge: 
+analogWrite(pin_rouge,255);
+analogWrite(pin_bleu,0);
+analogWrite(pin_vert,0);
+delay(1500); 
+
+// On met la LED en couleur bleue: 
+analogWrite(pin_rouge,0);
+analogWrite(pin_bleu,255);
+analogWrite(pin_vert,0);
+delay(1500); 
+
+//Puis en couleur verte: 
+analogWrite(pin_rouge,0);
+analogWrite(pin_bleu,0);
+analogWrite(pin_vert,255);
+delay(1500); 
+
+// Mais on peut aussi faire d'autres couleurs... 
+
+//violet 
+analogWrite(pin_rouge,170);
+analogWrite(pin_bleu,255);
+analogWrite(pin_vert,0);
+delay(1500);
+
+
+//blanc 
+analogWrite(pin_rouge,255);
+analogWrite(pin_bleu,255);
+analogWrite(pin_vert,255);
+delay(1500);
+
+//jaune
+
+analogWrite(pin_rouge,255);
+analogWrite(pin_bleu,0);
+analogWrite(pin_vert,255);
+delay(1500);
+}
