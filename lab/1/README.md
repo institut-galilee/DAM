@@ -6,6 +6,8 @@ Aghilas Kessaï
 
 Exercice1&5: Controler l'intensité d'une LED avec un programme (le code est dans le folder report)  
 
+La LED de gauche est allumée avec une intensité différente que la LED de droite:  
+
 ![image](https://user-images.githubusercontent.com/56322894/69011378-0c8d6d80-096a-11ea-8776-09595140258e.png)
 
 
