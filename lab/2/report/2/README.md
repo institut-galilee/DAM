@@ -5,20 +5,20 @@
 
 # EXERCISES 
 
-**1. EXERCISE 1 : BUZZER **
+# **EXERCISE 1 : BUZZER**
 
-   - **PLOT**
-   
- ![WhatsApp Image 2019-11-24 at 7 09 26 PM (1)](https://user-images.githubusercontent.com/56651688/69500533-5b07b280-0efc-11ea-930c-c9e606297c53.jpeg)
+   **1.PLOT**
+   ![WhatsApp Image 2019-11-24 at 7 09 26 PM (1)](https://user-images.githubusercontent.com/56651688/69501571-6fe94380-0f06-11ea-963d-2dfb791c9f6b.jpeg)
  
-   - **SKETCHS**
+ 
+   **2.SKETCHS**
      
    ![exobuz](https://user-images.githubusercontent.com/56651688/69500883-9bb4fb00-0eff-11ea-80c4-6dd2cb804081.png)
    
    **Vue schématique** 
    ![exo2ldrshema](https://user-images.githubusercontent.com/56651688/69500882-9a83ce00-0eff-11ea-968a-d7d491a2f640.png)
   
-   - **CODES**
+   **3.CODES**
    
    ```
   int buz =8;
@@ -48,8 +48,8 @@ void loop() {
 }
 ```
 
-**2. EXERCISE 2**
-  - **PLOT**
+# **EXERCISE 2 : LDR**
+  **1.PLOT**
   **Sans la led**
    ![exo2ldr](https://user-images.githubusercontent.com/56651688/69500881-98ba0a80-0eff-11ea-8625-1623febcf201.png)
  
@@ -61,11 +61,11 @@ void loop() {
    
 ![exoldrledshema](https://user-images.githubusercontent.com/56651688/69500886-9eafeb80-0eff-11ea-8d7a-07c43419ca0a.png)
    
-  - **SKETCHS**
+  **2.SKETCHS**
    ![WhatsApp Image 2019-11-24 at 7 09 26 PM](https://user-images.githubusercontent.com/56651688/69500535-5cd17600-0efc-11ea-9dff-87385685ca4c.jpeg)
   
  
-  - **CODES**
+  **3.CODES**
   
   **Sans la led**
    ```
@@ -110,3 +110,7 @@ void loop() {
   }
 }
  ```
+ **4.GRAPH**
+ 
+**Voici le graphe qui varie en fonction de la luminosité dédecté par le LDR**
+![WhatsApp Image 2019-11-24 at 10 07 31 PM (1)](https://user-images.githubusercontent.com/56651688/69501622-0584d300-0f07-11ea-8ae7-fa810594c895.jpeg)
