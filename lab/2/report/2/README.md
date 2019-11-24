@@ -5,12 +5,14 @@
 
 # EXERCISES 
 
-**1. EXERCISE 1**
+**1. EXERCISE 1 : BUZZER **
+
    - **PLOT**
+   
  ![WhatsApp Image 2019-11-24 at 7 09 26 PM (1)](https://user-images.githubusercontent.com/56651688/69500533-5b07b280-0efc-11ea-930c-c9e606297c53.jpeg)
+ 
    - **SKETCHS**
-   
-   
+     
    ![exobuz](https://user-images.githubusercontent.com/56651688/69500883-9bb4fb00-0eff-11ea-80c4-6dd2cb804081.png)
    
    **Vue schématique** 
