@@ -14,8 +14,8 @@
    **2.SKETCHS**
      
    ![exobuz](https://user-images.githubusercontent.com/56651688/69500883-9bb4fb00-0eff-11ea-80c4-6dd2cb804081.png)
-   
    **Vue schématique** 
+   
    ![exo2ldrshema](https://user-images.githubusercontent.com/56651688/69500882-9a83ce00-0eff-11ea-968a-d7d491a2f640.png)
   
    **3.CODES**
@@ -50,7 +50,11 @@ void loop() {
 
 # **EXERCISE 2 : LDR**
   **1.PLOT**
-  **Sans la led**
+   ![WhatsApp Image 2019-11-24 at 7 09 26 PM](https://user-images.githubusercontent.com/56651688/69500535-5cd17600-0efc-11ea-9dff-87385685ca4c.jpeg)
+  
+
+  **2.SKETCHS**
+    **Sans la led**
    ![exo2ldr](https://user-images.githubusercontent.com/56651688/69500881-98ba0a80-0eff-11ea-8625-1623febcf201.png)
  
   **Avec la led**
@@ -61,9 +65,6 @@ void loop() {
    
 ![exoldrledshema](https://user-images.githubusercontent.com/56651688/69500886-9eafeb80-0eff-11ea-8d7a-07c43419ca0a.png)
    
-  **2.SKETCHS**
-   ![WhatsApp Image 2019-11-24 at 7 09 26 PM](https://user-images.githubusercontent.com/56651688/69500535-5cd17600-0efc-11ea-9dff-87385685ca4c.jpeg)
-  
  
   **3.CODES**
   
