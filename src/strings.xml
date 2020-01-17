@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FindPT</string>
+    <string name="MsgBienvenue">Bienvenue sur FindP\u0026T</string>
+    <string name="Bienvenue_2">Localiser votre objet.</string>
+    <string name="infodeveloppementapp">Application de géolocalisation développée par Benabed, Sanvee et Kessaï de l\'Université Paris 13.</string>
+    <string name="numversion">Version 1.1.1</string>
+    <string name="ExplicationEcran2"><![CDATA[L\'application FINDP&T est une application qui vous permet de localiser votre objet connecté.]]></string>
+    <string name="Demander_localisation"><![CDATA[ Pour plus d\'informations sur le fonctionnement de l\'application, veuillez appuyer sur tutoriel.]]></string>
+    <string name="tutoriel_button">Tutoriel</string>
+    <string name="accesmap_button">Localiser mon objet</string>
+    <string name="bienvenue_tutoriel"><![CDATA[BIENVENUE AU TUTORIEL DE FINDP&T]]></string>
+    <string name="tutopage1"><![CDATA[FINDP&T vous permet de localiser votre objet connecte sans limite de distance.]]></string>
+    <string name="title_activity_maps">Map</string>
+    <string name="config_button">Configuration</string>
+    <string name="Config_txt">Veuillez entrer le numero de la personne qui localise ce telephone et ensuite validez la configuration.</string>
+    <string name="valider_txt">Valider</string>
+</resources>
