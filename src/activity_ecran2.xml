@@ -79,4 +79,3 @@
         app:layout_constraintStart_toEndOf="@+id/button_tutoriel"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.177" />
-</androidx.constraintlayout.widget.ConstraintLayout>
