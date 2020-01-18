@@ -21,9 +21,10 @@
 
     <TextView
         android:id="@+id/configView"
-        android:layout_width="320dp"
-        android:layout_height="128dp"
+        android:layout_width="335dp"
+        android:layout_height="156dp"
         android:backgroundTintMode="src_over"
+        android:fontFamily="@font/proza_libre_italic"
         android:foregroundTint="#B61414"
         android:text="@string/Config_txt"
         android:textColor="#1A0094"
@@ -37,9 +38,10 @@
 
     <Button
         android:id="@+id/button_valider"
-        android:layout_width="180dp"
-        android:layout_height="56dp"
+        android:layout_width="248dp"
+        android:layout_height="104dp"
         android:background="@drawable/button_acceder_carte"
+        android:fontFamily="@font/nunito_semibold"
         android:text="@string/valider_txt"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
