@@ -1,4 +1,3 @@
-
 package com.example.findpt;
 
 import androidx.annotation.NonNull;
@@ -22,7 +21,7 @@ public class Ecran2 extends AppCompatActivity implements LocationListener {
 
     private LocationManager lm;
     private static final int PERMS_CALL_ID = 1; // id de l'appel sur les permissions de localisation.
-
+    private static final int PERMS_RECEIVE = 4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +79,12 @@ public class Ecran2 extends AppCompatActivity implements LocationListener {
             );
             return;
         }
-
+        if ( checkSelfPermission(Manifest.permission.RECEIVE_SMS) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,new String[]{
+                    Manifest.permission.RECEIVE_SMS},PERMS_RECEIVE
+            );
+            return;
+        }
         // A partir d'ici, on sait que l'utilisateur a autorisé l'app a accéder a la localisation. On affiche un message (en Toast).
         Toast.makeText(Ecran2.this,"Vous avez autorisé FINDP&T à acceder à votre localisation.",Toast.LENGTH_SHORT).show();
         // On ouvre donc l'activity de la carte Google Maps.
@@ -95,6 +99,9 @@ public class Ecran2 extends AppCompatActivity implements LocationListener {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if(requestCode == PERMS_CALL_ID){
+            checkPermissions();
+        }
+        else if(requestCode==PERMS_RECEIVE){
             checkPermissions();
         }
     }
@@ -130,3 +137,4 @@ public class Ecran2 extends AppCompatActivity implements LocationListener {
 
     }
 }
+
