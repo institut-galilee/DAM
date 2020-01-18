@@ -20,11 +20,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class ConfigActivity<numeroTel> extends AppCompatActivity {
+public class ConfigActivity  extends AppCompatActivity {
 
 
     private static final int PERMS_CALL_ID = 2;
     private static final int PERMS_CALL_LOC_ID=3;
+
     EditText number;
     Button bouton;
     LocationManager locationManager;
@@ -52,8 +53,9 @@ public class ConfigActivity<numeroTel> extends AppCompatActivity {
             return;
         }
 
+
         // A partir d'ici, on sait que l'utilisateur a autorisé l'app  a envoyer des messages. On affiche un message (en Toast).
-        Toast.makeText(this,"Vous avez autorisé FINDP&T à envoyer des messages.",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Vous avez autorisé FINDP&T à envoyer/recevoir des messages.",Toast.LENGTH_SHORT).show();
         if (ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
                 ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED ) {
             ActivityCompat.requestPermissions(this, new String[]{
@@ -62,23 +64,37 @@ public class ConfigActivity<numeroTel> extends AppCompatActivity {
             );
             return;
         }
-        locationManager= (LocationManager) getSystemService(LOCATION_SERVICE);
+        Toast.makeText(this,"Vous avez autorisé FINDP&T à accéder a votre localisation.",Toast.LENGTH_SHORT).show();
         if((ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
                 ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED )) {
             return;
         }
+        locationManager= (LocationManager) getSystemService(LOCATION_SERVICE);
 
-
-        Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        if((ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED )) {
+            return;
+        }
+        // Attention, Network provider est plus precis que GPS provider, mais des fois le gps provider n'est pas disponible ce qui renvoie NULL!!!
+        Location location=null;
+        if(locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)){
+            location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        }
+        else if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+            location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        }
+        if(location==null){
+            return;
+        }
         double longitude = location.getLongitude();
         double latitude = location.getLatitude();
         String numeroTel = number.getText().toString();
         String lat=String.valueOf(latitude);
         String longi=String.valueOf(longitude);
+        String leMessage=lat+"X"+longi;
         if(ContextCompat.checkSelfPermission(this,Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED) {
             SmsManager smsManager = SmsManager.getDefault();
-            smsManager.sendTextMessage(numeroTel, null, lat, null, null);
-            smsManager.sendTextMessage(numeroTel, null, longi, null, null);
+            smsManager.sendTextMessage(numeroTel, null, leMessage, null, null);
             Toast.makeText(this,"Informations de localisation envoyées!",Toast.LENGTH_SHORT).show();
         }
 
