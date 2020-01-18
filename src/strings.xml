@@ -9,9 +9,9 @@
     <string name="tutoriel_button">Tutoriel</string>
     <string name="accesmap_button">Localiser mon objet</string>
     <string name="bienvenue_tutoriel"><![CDATA[BIENVENUE AU TUTORIEL DE FINDP&T]]></string>
-    <string name="tutopage1"><![CDATA[FINDP&T vous permet de localiser votre objet connecte sans limite de distance.]]></string>
+    <string name="tutopage1"><![CDATA[FINDP&T vous permet de localiser votre objet connecté sans limite de distance.]]></string>
     <string name="title_activity_maps">Map</string>
     <string name="config_button">Configuration</string>
-    <string name="Config_txt">Veuillez entrer le numero de la personne qui localise ce telephone et ensuite validez la configuration.</string>
-    <string name="valider_txt">Valider</string>
+    <string name="Config_txt">Veuillez entrer le numéro de la personne qui localise ce telephone et ensuite envoyez votre localisation.</string>
+    <string name="valider_txt">Envoyer ma localisation</string>
 </resources>
