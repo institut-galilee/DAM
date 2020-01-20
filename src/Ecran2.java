@@ -137,4 +137,3 @@ public class Ecran2 extends AppCompatActivity implements LocationListener {
 
     }
 }
-
