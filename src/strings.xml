@@ -9,9 +9,11 @@
     <string name="tutoriel_button">Tutoriel</string>
     <string name="accesmap_button">Localiser mon objet</string>
     <string name="bienvenue_tutoriel"><![CDATA[BIENVENUE AU TUTORIEL DE FINDP&T]]></string>
-    <string name="tutopage1"><![CDATA[FINDP&T vous permet de localiser votre objet connecté sans limite de distance.]]></string>
+    <string name="tutopage1"><![CDATA[FINDP&T vous permet de localiser votre objet connecté sans limite de distance.\n\n Vous voulez localiser votre objet connecté ? Allez dans \'Gérer ma localisation\' et indiquez le numéro de la carte SIM qui est incluse dans le module SIM800L de FINDPT.
+    \n\n Si vous voulez envoyer votre localisation à un proche, allez dans \'Gerer ma localisation\', entrez son numero et envoyez la localisation. ]]></string>
     <string name="title_activity_maps">Map</string>
-    <string name="config_button">Configuration</string>
-    <string name="Config_txt">Veuillez entrer le numéro de la personne qui localise ce telephone et ensuite envoyez votre localisation.</string>
+    <string name="config_button">Gérer la localisation</string>
+    <string name="Config_txt">Entrez le numéro puis envoyez votre localisation ou localisez votre objet: </string>
     <string name="valider_txt">Envoyer ma localisation</string>
+    <string name="allumer_findPT">Localiser mon objet</string>
 </resources>
