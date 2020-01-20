@@ -1,5 +1,5 @@
-# Projet de geolocalisation FINDP&T
-## Realisé par Sanvee,Benabed et Kessaï
+# Projet de géolocalisation FINDP&T
+## Réalisé par Sanvee,Benabed et Kessaï
 
 Ce projet consiste à élaborer un objet connecté dont on peut géolocaliser à travers une application.
 
