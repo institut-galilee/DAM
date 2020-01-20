@@ -40,7 +40,7 @@ void loop() {
       if(response.indexOf("ON") == 4){
           SIM800L.println("AT+CMGF=1");    //Sets the GSM Module in Text Mode
           delay(100);  // Delay of 1000 milli seconds or 1 second
-          SIM800L.println("AT+CMGS=\"+33766107901\"\r"); 
+          SIM800L.println("AT+CMGS=\"+3376*********\"\r"); 
           delay(100);
           SIM800L.println(link);// The SMS text you want to send
           delay(100);
