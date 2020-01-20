@@ -6,7 +6,7 @@ double latitude, longitude;
 String link;
 SoftwareSerial sim800l(10, 11);
 
-String number = "+33766107901"; //  le numero à qui on envoie le message
+String number = "+3376*******"; //  le numero à qui on envoie le message
 //String SIM_PIN_CODE = String( "1661" ); // le code pin de la carte sim
 
 void setup() {
